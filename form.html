@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>User Registration Form</title>
+  <!--Linking an external CSS file for styling the form-->
   <link rel="stylesheet" href="styles.css">
+  <!-- Loading your javaScript file with defer so it rouns after the HTML is parsed-->
   <script defer src="Javascript.js"></script>
 </head>
 <body>
+  <!-- Main headding describing the purpose of the page-->
   <h1>User Registration</h1>
+  <!-- Form element that will send data using POST to the/submit route-->
   <form id="dataForm" method="POST" action="/submit">
+    <!-- First name input with label and required validation-->
     <label for="first_name">First Name:</label>
     <input type="text" id="first_name" name="first_name" required>
 
@@ -23,7 +28,7 @@
 
     <label for="eircode">Eircode:</label>
     <input type="text" id="eircode" name="eircode" required>
-
+  <!-- Submit button to send the form data-->
     <button type="submit">Submit</button>
   </form>
 </body>

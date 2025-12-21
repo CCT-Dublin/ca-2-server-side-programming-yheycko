@@ -1,4 +1,6 @@
+// Attach  a submit event listener to the form
 document.getElementById('dataForm') .addEventListener('submit', function(e) {
+// retrieve values from the from inputs    
 const firstName = document.getElementById('first_name').value;
 const secondName = document.getElementById('second_name').value;
 const email = document.getElementById('email').value;
